@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>ce018dd4-cacd-4fc0-9ede-e673ed84ee80</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>ffcac67b-93d4-435c-81b8-b528ce7033b0</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Variables">
+      <UniqueIdentifier>{fee088e2-17b1-4be2-a85d-5528a991fcc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controler">
+      <UniqueIdentifier>{9c9aea17-965c-4f42-9515-06e1f84b98fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="timer_var.cpp">
+      <Filter>Variables</Filter>
+    </ClCompile>
+    <ClCompile Include="gamepage_var.cpp">
+      <Filter>Variables</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePage.xaml.cpp" />
+    <ClCompile Include="reader.cpp">
+      <Filter>Controler</Filter>
+    </ClCompile>
+    <ClCompile Include="score.cpp">
+      <Filter>Controler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="timer_var.h">
+      <Filter>Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="gamepage_var.h">
+      <Filter>Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePage.xaml.h" />
+    <ClInclude Include="score.h">
+      <Filter>Controler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LOGO-MYO.PNG">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\arrow_blue_down.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\arrow_blue_left.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\arrow_blue_right.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\arrow_blue_up.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\arrow_red_down.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\arrow_red_left.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\arrow_red_right.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\arrow_red_up.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\right.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\wrong.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MyoGaming_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+    <Page Include="GamePage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\somefile.txt">
+      <Filter>Assets</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
