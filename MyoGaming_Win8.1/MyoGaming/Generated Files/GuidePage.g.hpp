@@ -22,10 +22,19 @@ void ::MyoGaming::GuidePage::InitializeComponent()
     // Call LoadComponent on ms-appx:///GuidePage.xaml
     ::Windows::UI::Xaml::Application::LoadComponent(this, ref new ::Windows::Foundation::Uri(L"ms-appx:///GuidePage.xaml"), ::Windows::UI::Xaml::Controls::Primitives::ComponentResourceLocation::Application);
 
+    // Get the HyperlinkButton named 'btn_back'
+    btn_back = safe_cast<::Windows::UI::Xaml::Controls::HyperlinkButton^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"btn_back"));
 }
 
 void ::MyoGaming::GuidePage::Connect(int connectionId, Platform::Object^ target)
 {
+    switch (connectionId)
+    {
+    case 1:
+        (safe_cast<::Windows::UI::Xaml::Controls::Primitives::ButtonBase^>(target))->Click +=
+            ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::MyoGaming::GuidePage::*)(Platform::Object^, Windows::UI::Xaml::RoutedEventArgs^))&GuidePage::btn_back_Click);
+        break;
+    }
     (void)connectionId; // Unused parameter
     (void)target; // Unused parameter
     _contentLoaded = true;

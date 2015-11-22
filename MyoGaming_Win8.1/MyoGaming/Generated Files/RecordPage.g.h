@@ -32,6 +32,7 @@ namespace MyoGaming
         bool _contentLoaded;
     
         private: ::Windows::UI::Xaml::Controls::TextBlock^ txt_title;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ txt_content;
         private: ::Windows::UI::Xaml::Controls::Button^ btn_test;
     };
 }

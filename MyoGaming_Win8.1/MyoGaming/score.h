@@ -39,6 +39,7 @@ public:
 	}
 	void set_score(int score) { this->score = score; }
 	void set_t(time_t t) { this->t = t; }
+	Platform::String^ toString();
 
 	static void test();
 

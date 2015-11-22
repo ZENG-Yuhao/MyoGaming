@@ -45,6 +45,7 @@ namespace MyoGaming
 		void PointerIsBack();
 		void GameStart();
 		void initTimer();
+		void deleteTimer();
 		void OnTick(Object ^ sender, Object ^ e);
 		void GameEnd();
 		void ctr_up_PointerEntered(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e);

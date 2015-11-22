@@ -38,10 +38,12 @@ void ::MyoGaming::GamePage::InitializeComponent()
     pnl_display = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"pnl_display"));
     // Get the TextBlock named 'txt_life'
     txt_life = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"txt_life"));
-    // Get the Button named 'btn_start'
-    btn_start = safe_cast<::Windows::UI::Xaml::Controls::Button^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"btn_start"));
-    // Get the Button named 'btn_exit'
-    btn_exit = safe_cast<::Windows::UI::Xaml::Controls::Button^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"btn_exit"));
+    // Get the HyperlinkButton named 'btn_start'
+    btn_start = safe_cast<::Windows::UI::Xaml::Controls::HyperlinkButton^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"btn_start"));
+    // Get the TextBlock named 'txt_timer'
+    txt_timer = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"txt_timer"));
+    // Get the HyperlinkButton named 'btn_exit'
+    btn_exit = safe_cast<::Windows::UI::Xaml::Controls::HyperlinkButton^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"btn_exit"));
     // Get the TextBlock named 'txt_rw'
     txt_rw = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"txt_rw"));
     // Get the TextBlock named 'txt_score'

@@ -24,6 +24,8 @@ void ::MyoGaming::RecordPage::InitializeComponent()
 
     // Get the TextBlock named 'txt_title'
     txt_title = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"txt_title"));
+    // Get the TextBlock named 'txt_content'
+    txt_content = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"txt_content"));
     // Get the Button named 'btn_test'
     btn_test = safe_cast<::Windows::UI::Xaml::Controls::Button^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"btn_test"));
 }

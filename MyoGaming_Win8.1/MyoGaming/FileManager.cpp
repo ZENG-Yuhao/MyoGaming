@@ -13,16 +13,16 @@ FileManager::FileManager()
 FileManager::~FileManager()
 {
 	if (targetFile!=nullptr) delete(targetFile);
-	if (returnContent != nullptr) delete(returnContent);
+	//if (returnContent != nullptr) delete(returnContent);
 }
 
 void FileManager::CreateFile(String^ fileName)
 {
-	create_task(KnownFolders::PicturesLibrary->CreateFileAsync(fileName, CreationCollisionOption::ReplaceExisting)).then([this](StorageFile^ file)
+	create_task(KnownFolders::PicturesLibrary->CreateFileAsync(fileName, CreationCollisionOption::OpenIfExists)).then([this](StorageFile^ file)
 	{
 		targetFile = file;
 	});
-	Sleep(1000);
+	//Sleep(1000);
 }
 
 void FileManager::WriteToFile(String^ content)
@@ -72,4 +72,18 @@ String^ FileManager::ReadFromFile()
 
 	}
 	return returnContent;
+}
+
+void FileManager::ValidateFile(Platform::String^ filename)
+{
+	create_task(KnownFolders::PicturesLibrary->GetFileAsync(filename)).then([this](task<StorageFile^> getFileTask)
+	{
+		try
+		{
+			targetFile = getFileTask.get();
+		}
+		catch (Exception^)
+		{
+		}
+	});
 }

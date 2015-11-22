@@ -9,21 +9,25 @@
 #include "pch.h"
 #include "XamlTypeInfo.g.h"
 
+#include "DifficultyPage.xaml.h"
 #include "FilerwPage.xaml.h"
 #include "GamePage.xaml.h"
 #include "GuidePage.xaml.h"
+#include "NavigatorPage.xaml.h"
+#include "NewgamePage.xaml.h"
 #include "App.xaml.h"
 #include "MainPage.xaml.h"
 #include "RecordPage.xaml.h"
-#include "WelcomePage.xaml.h"
 
+#include "DifficultyPage.g.hpp"
 #include "FilerwPage.g.hpp"
 #include "GamePage.g.hpp"
 #include "GuidePage.g.hpp"
+#include "NavigatorPage.g.hpp"
+#include "NewgamePage.g.hpp"
 #include "App.g.hpp"
 #include "MainPage.g.hpp"
 #include "RecordPage.g.hpp"
-#include "WelcomePage.g.hpp"
 
 ::Platform::Collections::Vector<::Windows::UI::Xaml::Markup::IXamlMetadataProvider^>^ ::XamlTypeInfo::InfoProvider::XamlTypeInfoProvider::OtherProviders::get()
 {
@@ -92,6 +96,19 @@
         return ref new XamlSystemBaseType(typeName);
     }
 
+    if (typeName == L"MyoGaming.DifficultyPage")
+    {
+        ::XamlTypeInfo::InfoProvider::XamlUserType^ userType = ref new ::XamlTypeInfo::InfoProvider::XamlUserType(this, typeName, GetXamlTypeByName(L"Windows.UI.Xaml.Controls.Page"));
+        userType->KindOfType = ::Windows::UI::Xaml::Interop::TypeKind::Custom;
+        userType->Activator =
+            []() -> Platform::Object^ 
+            {
+                return ref new ::MyoGaming::DifficultyPage(); 
+            };
+        userType->SetIsLocalType();
+        return userType;
+    }
+
     if (typeName == L"MyoGaming.FilerwPage")
     {
         ::XamlTypeInfo::InfoProvider::XamlUserType^ userType = ref new ::XamlTypeInfo::InfoProvider::XamlUserType(this, typeName, GetXamlTypeByName(L"Windows.UI.Xaml.Controls.Page"));
@@ -154,6 +171,32 @@
         return userType;
     }
 
+    if (typeName == L"MyoGaming.NavigatorPage")
+    {
+        ::XamlTypeInfo::InfoProvider::XamlUserType^ userType = ref new ::XamlTypeInfo::InfoProvider::XamlUserType(this, typeName, GetXamlTypeByName(L"Windows.UI.Xaml.Controls.Page"));
+        userType->KindOfType = ::Windows::UI::Xaml::Interop::TypeKind::Custom;
+        userType->Activator =
+            []() -> Platform::Object^ 
+            {
+                return ref new ::MyoGaming::NavigatorPage(); 
+            };
+        userType->SetIsLocalType();
+        return userType;
+    }
+
+    if (typeName == L"MyoGaming.NewgamePage")
+    {
+        ::XamlTypeInfo::InfoProvider::XamlUserType^ userType = ref new ::XamlTypeInfo::InfoProvider::XamlUserType(this, typeName, GetXamlTypeByName(L"Windows.UI.Xaml.Controls.Page"));
+        userType->KindOfType = ::Windows::UI::Xaml::Interop::TypeKind::Custom;
+        userType->Activator =
+            []() -> Platform::Object^ 
+            {
+                return ref new ::MyoGaming::NewgamePage(); 
+            };
+        userType->SetIsLocalType();
+        return userType;
+    }
+
     if (typeName == L"MyoGaming.RecordPage")
     {
         ::XamlTypeInfo::InfoProvider::XamlUserType^ userType = ref new ::XamlTypeInfo::InfoProvider::XamlUserType(this, typeName, GetXamlTypeByName(L"Windows.UI.Xaml.Controls.Page"));
@@ -162,19 +205,6 @@
             []() -> Platform::Object^ 
             {
                 return ref new ::MyoGaming::RecordPage(); 
-            };
-        userType->SetIsLocalType();
-        return userType;
-    }
-
-    if (typeName == L"MyoGaming.WelcomePage")
-    {
-        ::XamlTypeInfo::InfoProvider::XamlUserType^ userType = ref new ::XamlTypeInfo::InfoProvider::XamlUserType(this, typeName, GetXamlTypeByName(L"Windows.UI.Xaml.Controls.Page"));
-        userType->KindOfType = ::Windows::UI::Xaml::Interop::TypeKind::Custom;
-        userType->Activator =
-            []() -> Platform::Object^ 
-            {
-                return ref new ::MyoGaming::WelcomePage(); 
             };
         userType->SetIsLocalType();
         return userType;

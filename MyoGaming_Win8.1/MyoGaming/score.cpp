@@ -17,6 +17,11 @@ Score::Score(string first_name, string last_name, int score, time_t t)
 	this->score = score;
 	this->t = t;
 }
+
+Platform::String^ Score::toString()
+{
+	return "hi";
+}
 Score Score::parse(string line)
 {
 	string::size_type sz;                               // alias of size_t
@@ -90,4 +95,5 @@ std::vector<std::string> split(const std::string &s, char delim)
 	split(s, delim, elems);
 	return elems;
 }
+
 

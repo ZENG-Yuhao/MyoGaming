@@ -20,14 +20,14 @@
     <Image Include="Assets\SplashScreen.scale-100.png">
       <Filter>Assets</Filter>
     </Image>
-    <Filter Include="View">
-      <UniqueIdentifier>{1fa4ad62-f63a-46c7-8cde-a8bb40cea0ed}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Variables">
       <UniqueIdentifier>{ec97e358-6376-4b88-a5d6-fe9833e5dcf3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Class">
       <UniqueIdentifier>{84bcfa09-df9e-4413-b44a-41032fbc6435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View &amp; Controler">
+      <UniqueIdentifier>{1fa4ad62-f63a-46c7-8cde-a8bb40cea0ed}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +58,8 @@
     <ClCompile Include="FilerwPage.xaml.cpp" />
     <ClCompile Include="GamePage.xaml.cpp" />
     <ClCompile Include="RecordPage.xaml.cpp" />
+    <ClCompile Include="GuidePage.xaml.cpp" />
+    <ClCompile Include="WelcomePage.xaml.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -81,6 +83,8 @@
     <ClInclude Include="FilerwPage.xaml.h" />
     <ClInclude Include="GamePage.xaml.h" />
     <ClInclude Include="RecordPage.xaml.h" />
+    <ClInclude Include="GuidePage.xaml.h" />
+    <ClInclude Include="WelcomePage.xaml.h" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest" />
@@ -90,22 +94,28 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="GamePage.xaml">
-      <Filter>View</Filter>
+      <Filter>View &amp; Controler</Filter>
     </Page>
     <Page Include="FilerwPage.xaml">
-      <Filter>View</Filter>
+      <Filter>View &amp; Controler</Filter>
     </Page>
     <Page Include="MainPage.xaml">
-      <Filter>View</Filter>
+      <Filter>View &amp; Controler</Filter>
     </Page>
     <Page Include="RecordPage.xaml">
-      <Filter>View</Filter>
-    </Page>
-    <Page Include="WelcomePage.xaml">
-      <Filter>View</Filter>
+      <Filter>View &amp; Controler</Filter>
     </Page>
     <Page Include="GuidePage.xaml">
-      <Filter>View</Filter>
+      <Filter>View &amp; Controler</Filter>
+    </Page>
+    <Page Include="NavigatorPage.xaml">
+      <Filter>View &amp; Controler</Filter>
+    </Page>
+    <Page Include="NewgamePage.xaml">
+      <Filter>View &amp; Controler</Filter>
+    </Page>
+    <Page Include="DifficultyPage.xaml">
+      <Filter>View &amp; Controler</Filter>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +168,60 @@
       <Filter>Assets</Filter>
     </Image>
     <Image Include="Assets\welcome-myo.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hell_blue_down.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hell_blue_left.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hell_blue_right.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hell_blue_up.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hell_red_down.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hell_red_left.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hell_red_right.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\hell_red_up.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\nightmare_blue_down.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\nightmare_blue_left.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\nightmare_blue_right.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\nightmare_blue_up.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\nightmare_red_down.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\nightmare_red_left.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\nightmare_red_right.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\nightmare_red_up.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\logo_2.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\guide.png">
       <Filter>Assets</Filter>
     </Image>
   </ItemGroup>

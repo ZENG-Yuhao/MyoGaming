@@ -11,6 +11,8 @@ public:
 	void WriteToFile(Platform::String^ content);
 	Platform::String^ ReadFromFile();
 
+	void ValidateFile(Platform::String ^ filename);
+
 
 };
 

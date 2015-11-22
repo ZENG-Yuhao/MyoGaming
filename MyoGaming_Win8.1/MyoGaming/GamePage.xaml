@@ -34,22 +34,22 @@
         <StackPanel x:Name="ctr_down" Grid.Column="1" Grid.Row="2" Background="white" PointerEntered="ctr_down_PointerEntered" />
         <StackPanel x:Name="ctr_right" Grid.Column="2" Grid.Row="1" Background="white" PointerEntered="ctr_right_PointerEntered" />
         <StackPanel x:Name="pnl_display" Grid.Column="1" Grid.Row="1" Background="White" PointerEntered="pnl_display_PointerEntered">
-            <Image x:Name="img_display"  Source="Assets/arrow_blue_up.png" Height="420" Margin="10,10,10,10" 
+            <Image x:Name="img_display"  Source="Assets/logo_2.jpg" Height="420" Margin="10,10,10,10" 
                    />
         </StackPanel>
         <StackPanel Grid.Column="0" Grid.Row="0">
-            <TextBlock x:Name="txt_score" Text="Score: 0" FontSize="24" 
+            <TextBlock x:Name="txt_score" Text="Score: 0" FontSize="30" FontFamily="Arial" FontWeight="Bold" 
                        VerticalAlignment="Center" HorizontalAlignment="Center"
                        Margin="0,20,0,0" Foreground="{ThemeResource AppBarBackgroundThemeBrush}"/>
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="0">
-            <TextBlock x:Name="txt_rw" Text="R/W: 0/0" FontSize="24" 
+            <TextBlock x:Name="txt_rw" Text="R/W: 0/0" FontSize="30" FontFamily="Arial" FontWeight="Bold"
                        VerticalAlignment="Center" HorizontalAlignment="Center"
                         Margin="0,20,0,0" Foreground="{ThemeResource AppBarBackgroundThemeBrush}"/>
         </StackPanel>
 
         <StackPanel Grid.Column="2" Grid.Row="2">
-            <Button x:Name="btn_exit" Content="EXIT"
+            <HyperlinkButton x:Name="btn_exit" Content="EXIT"
                     FontSize="30" FontFamily="Arial"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center" Click="btn_exit_Click" Foreground="Black"
@@ -57,16 +57,21 @@
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="2">
-            <Button x:Name="btn_start" Content="START"
+            <HyperlinkButton x:Name="btn_start" Content="START"
                     FontSize="30" FontFamily="Arial"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center" Foreground="Black" Margin="50" Click="btn_start_Click"
+                    HorizontalAlignment="Center" Foreground="Black" Margin="30" Click="btn_start_Click"
                     />
+            <TextBlock x:Name="txt_timer" Text=""
+                       FontSize="30" FontFamily="Arial" FontWeight="Bold"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"
+                      Foreground="{ThemeResource AppBarBackgroundThemeBrush}"/>
         </StackPanel>
         <StackPanel Grid.Column="0" Grid.Row="2">
-            <TextBlock x:Name="txt_life" Text="Life: 3" FontSize="24" 
+            <TextBlock x:Name="txt_life" Text="" FontSize="30" FontFamily="Arial" FontWeight="Bold"
                        VerticalAlignment="Center" HorizontalAlignment="Center"
                         Margin="0,20,0,0" Foreground="{ThemeResource AppBarBackgroundThemeBrush}"/>
+
         </StackPanel>
     </Grid>
 </Page>

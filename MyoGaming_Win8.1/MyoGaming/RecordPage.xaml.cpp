@@ -6,6 +6,7 @@
 #include "pch.h"
 #include "RecordPage.xaml.h"
 #include "FileManager.h"
+#include "recorder_var.h"
 
 using namespace MyoGaming;
 
@@ -26,6 +27,9 @@ RecordPage::RecordPage()
 {
 
 	InitializeComponent(); 
+	fileManager->CreateFile(fileName);
+	txt_content->Text = fileManager->ReadFromFile();
+
 
 }
 
@@ -34,7 +38,8 @@ void RecordPage::btn_test_Click(Platform::Object^ sender, Windows::UI::Xaml::Rou
 	//Fmngr = new FileManager();
 	//Fmngr->CreateFile("HappyHappy.dat");
 	//Fmngr->WriteToFile("HappyNMB");
-	fileManager->CreateFile("HappyHappyHappy.dat");
-	fileManager->WriteToFile("HappyNMMMP");
+	//fileManager->CreateFile("HappyHappyHappy.dat");
+	//fileManager->WriteToFile("HappyNMMMP");
+	txt_content->Text = fileManager->ReadFromFile();
 }
 

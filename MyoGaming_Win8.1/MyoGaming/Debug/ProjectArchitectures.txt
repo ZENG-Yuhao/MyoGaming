@@ -1,1 +1,1 @@
-F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\MyoGaming.vcxproj;x86
+F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\MyoGaming.vcxproj;x86

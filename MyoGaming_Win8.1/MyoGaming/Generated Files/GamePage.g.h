@@ -25,7 +25,7 @@ namespace Windows {
             namespace Controls {
                 ref class StackPanel;
                 ref class TextBlock;
-                ref class Button;
+                ref class HyperlinkButton;
                 ref class Image;
             }
         }
@@ -52,8 +52,9 @@ namespace MyoGaming
         private: ::Windows::UI::Xaml::Controls::StackPanel^ ctr_right;
         private: ::Windows::UI::Xaml::Controls::StackPanel^ pnl_display;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ txt_life;
-        private: ::Windows::UI::Xaml::Controls::Button^ btn_start;
-        private: ::Windows::UI::Xaml::Controls::Button^ btn_exit;
+        private: ::Windows::UI::Xaml::Controls::HyperlinkButton^ btn_start;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ txt_timer;
+        private: ::Windows::UI::Xaml::Controls::HyperlinkButton^ btn_exit;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ txt_rw;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ txt_score;
         private: ::Windows::UI::Xaml::Controls::Image^ img_display;

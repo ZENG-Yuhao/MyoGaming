@@ -4,7 +4,7 @@
 int nb_right = 0;
 int nb_wrong = 0;
 int score = 0;
-int life = 3;
+int life = maxlife;
 int code_direction = 1;
 bool locked = true;
 bool started = false;
@@ -23,24 +23,24 @@ Platform::String^ normalPaths[8] = {
 	"ms-appx:Assets/arrow_red_right.png" };
 
 Platform::String^ nightmarePaths[8] = {
-	"ms-appx:Assets/arrow_blue_up.png",
-	"ms-appx:Assets/arrow_blue_down.png",
-	"ms-appx:Assets/arrow_blue_left.png",
-	"ms-appx:Assets/arrow_blue_right.png",
-	"ms-appx:Assets/arrow_red_up.png",
-	"ms-appx:Assets/arrow_red_down.png",
-	"ms-appx:Assets/arrow_red_left.png",
-	"ms-appx:Assets/arrow_red_right.png" };
+	"ms-appx:Assets/nightmare_blue_up.png",
+	"ms-appx:Assets/nightmare_blue_down.png",
+	"ms-appx:Assets/nightmare_blue_left.png",
+	"ms-appx:Assets/nightmare_blue_right.png",
+	"ms-appx:Assets/nightmare_red_up.png",
+	"ms-appx:Assets/nightmare_red_down.png",
+	"ms-appx:Assets/nightmare_red_left.png",
+	"ms-appx:Assets/nightmare_red_right.png" };
 
 Platform::String^ hellPaths[8] = {
-	"ms-appx:Assets/arrow_blue_up.png",
-	"ms-appx:Assets/arrow_blue_down.png",
-	"ms-appx:Assets/arrow_blue_left.png",
-	"ms-appx:Assets/arrow_blue_right.png",
-	"ms-appx:Assets/arrow_red_up.png",
-	"ms-appx:Assets/arrow_red_down.png",
-	"ms-appx:Assets/arrow_red_left.png",
-	"ms-appx:Assets/arrow_red_right.png" };
+	"ms-appx:Assets/hell_blue_up.png",
+	"ms-appx:Assets/hell_blue_down.png",
+	"ms-appx:Assets/hell_blue_left.png",
+	"ms-appx:Assets/hell_blue_right.png",
+	"ms-appx:Assets/hell_red_up.png",
+	"ms-appx:Assets/hell_red_down.png",
+	"ms-appx:Assets/hell_red_left.png",
+	"ms-appx:Assets/hell_red_right.png" };
 
 void initPaths(Difficulty diff)
 {
@@ -68,5 +68,5 @@ void gamepage_var_clear()
 	score = 0;
 	code_direction = 1;
 	locked = true;
-	life = 3;
+	life = maxlife;
 }

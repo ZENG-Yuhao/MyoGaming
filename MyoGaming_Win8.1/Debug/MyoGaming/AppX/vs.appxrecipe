@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|Win32</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>8c4f6006-d9fe-4a3a-abc5-798eef97886b</PackageIdentityName>
-    <IntermediateOutputPath>F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>B33330528D9DF6F8B21BB1FB1717B1C36CA99C5ED59324888783BA89A5F7B069</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>8c4f6006-d9fe-4a3a-abc5-798eef97886b_1.0.0.0_x86__3qp2rwd202jzt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>8c4f6006-d9fe-4a3a-abc5-798eef97886b_3qp2rwd202jzt!App</RegisteredUserModeAppID>
@@ -19,140 +19,220 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="F:\Visual Studio Workspace\Projects\MyoGaming\Debug\MyoGaming\AppxManifest.xml">
+    <AppXManifest Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-21T21:15:45.510</Modified>
+      <Modified>2015-11-22T15:16:49.724</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\Debug\MyoGaming\MyoGaming.exe">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\MyoGaming.exe">
       <PackagePath>MyoGaming.exe</PackagePath>
-      <Modified>2015-11-22T00:50:38.542</Modified>
+      <Modified>2015-11-22T17:09:15.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\Debug\MyoGaming\MyoGaming.winmd">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\MyoGaming.winmd">
       <PackagePath>MyoGaming.winmd</PackagePath>
-      <Modified>2015-11-21T20:55:41.667</Modified>
+      <Modified>2015-11-22T16:00:27.462</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\arrow_blue_down.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\arrow_blue_down.png">
       <PackagePath>Assets\arrow_blue_down.png</PackagePath>
       <Modified>2015-11-17T01:15:45.379</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\arrow_blue_left.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\arrow_blue_left.png">
       <PackagePath>Assets\arrow_blue_left.png</PackagePath>
       <Modified>2015-11-17T01:15:31.092</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\arrow_blue_right.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\arrow_blue_right.png">
       <PackagePath>Assets\arrow_blue_right.png</PackagePath>
       <Modified>2015-11-17T01:15:20.051</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\arrow_blue_up.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\arrow_blue_up.png">
       <PackagePath>Assets\arrow_blue_up.png</PackagePath>
       <Modified>2015-11-17T01:15:04.804</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\arrow_red_down.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\arrow_red_down.png">
       <PackagePath>Assets\arrow_red_down.png</PackagePath>
       <Modified>2015-11-17T01:16:21.142</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\arrow_red_left.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\arrow_red_left.png">
       <PackagePath>Assets\arrow_red_left.png</PackagePath>
       <Modified>2015-11-17T01:16:37.561</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\arrow_red_right.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\arrow_red_right.png">
       <PackagePath>Assets\arrow_red_right.png</PackagePath>
       <Modified>2015-11-17T01:16:09.340</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\arrow_red_up.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\arrow_red_up.png">
       <PackagePath>Assets\arrow_red_up.png</PackagePath>
       <Modified>2015-11-17T01:16:49.984</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\LOGO-MYO.PNG">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\guide.png">
+      <PackagePath>Assets\guide.png</PackagePath>
+      <Modified>2015-11-22T15:19:32.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\hell_blue_down.png">
+      <PackagePath>Assets\hell_blue_down.png</PackagePath>
+      <Modified>2015-11-22T14:55:45.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\hell_blue_left.png">
+      <PackagePath>Assets\hell_blue_left.png</PackagePath>
+      <Modified>2015-11-22T14:56:15.106</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\hell_blue_right.png">
+      <PackagePath>Assets\hell_blue_right.png</PackagePath>
+      <Modified>2015-11-22T15:07:44.955</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\hell_blue_up.png">
+      <PackagePath>Assets\hell_blue_up.png</PackagePath>
+      <Modified>2015-11-22T14:56:52.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\hell_red_down.png">
+      <PackagePath>Assets\hell_red_down.png</PackagePath>
+      <Modified>2015-11-22T15:08:04.447</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\hell_red_left.png">
+      <PackagePath>Assets\hell_red_left.png</PackagePath>
+      <Modified>2015-11-22T15:17:22.337</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\hell_red_right.png">
+      <PackagePath>Assets\hell_red_right.png</PackagePath>
+      <Modified>2015-11-22T14:58:45.062</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\hell_red_up.png">
+      <PackagePath>Assets\hell_red_up.png</PackagePath>
+      <Modified>2015-11-22T14:59:10.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\LOGO-MYO.PNG">
       <PackagePath>Assets\LOGO-MYO.PNG</PackagePath>
       <Modified>2015-11-16T23:26:09.815</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-07-06T20:05:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\right.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\nightmare_blue_down.png">
+      <PackagePath>Assets\nightmare_blue_down.png</PackagePath>
+      <Modified>2015-11-22T14:49:32.406</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\nightmare_blue_left.png">
+      <PackagePath>Assets\nightmare_blue_left.png</PackagePath>
+      <Modified>2015-11-22T14:48:56.073</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\nightmare_blue_right.png">
+      <PackagePath>Assets\nightmare_blue_right.png</PackagePath>
+      <Modified>2015-11-22T14:47:47.533</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\nightmare_blue_up.png">
+      <PackagePath>Assets\nightmare_blue_up.png</PackagePath>
+      <Modified>2015-11-22T14:49:11.421</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\nightmare_red_down.png">
+      <PackagePath>Assets\nightmare_red_down.png</PackagePath>
+      <Modified>2015-11-22T14:51:02.391</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\nightmare_red_left.png">
+      <PackagePath>Assets\nightmare_red_left.png</PackagePath>
+      <Modified>2015-11-22T14:51:50.574</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\nightmare_red_right.png">
+      <PackagePath>Assets\nightmare_red_right.png</PackagePath>
+      <Modified>2015-11-22T14:52:18.162</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\nightmare_red_up.png">
+      <PackagePath>Assets\nightmare_red_up.png</PackagePath>
+      <Modified>2015-11-22T14:52:48.310</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\right.png">
       <PackagePath>Assets\right.png</PackagePath>
       <Modified>2015-11-17T03:03:28.025</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-07-06T20:05:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-07-06T20:05:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-07-06T20:05:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\ui_game_up_arrow.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\ui_game_up_arrow.png">
       <PackagePath>Assets\ui_game_up_arrow.png</PackagePath>
       <Modified>2015-11-20T11:45:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\wrong.png">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\wrong.png">
       <PackagePath>Assets\wrong.png</PackagePath>
       <Modified>2015-11-17T02:58:07.470</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\backgroud-1.jpg">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\backgroud-1.jpg">
       <PackagePath>Assets\backgroud-1.jpg</PackagePath>
       <Modified>2015-11-20T11:57:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\background-2.jpg">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\background-2.jpg">
       <PackagePath>Assets\background-2.jpg</PackagePath>
       <Modified>2015-11-20T11:55:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\gameover-b.jpg">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\gameover-b.jpg">
       <PackagePath>Assets\gameover-b.jpg</PackagePath>
       <Modified>2015-11-20T11:48:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\gameover-w.jpg">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\gameover-w.jpg">
       <PackagePath>Assets\gameover-w.jpg</PackagePath>
       <Modified>2015-11-20T11:48:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\MyoGaming\Assets\welcome-myo.jpg">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\logo_2.jpg">
+      <PackagePath>Assets\logo_2.jpg</PackagePath>
+      <Modified>2015-11-20T14:39:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\MyoGaming\Assets\welcome-myo.jpg">
       <PackagePath>Assets\welcome-myo.jpg</PackagePath>
       <Modified>2015-11-20T11:37:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\Debug\MyoGaming\App.xbf">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2015-11-21T20:55:41.887</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\Debug\MyoGaming\FilerwPage.xbf">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\DifficultyPage.xbf">
+      <PackagePath>DifficultyPage.xbf</PackagePath>
+      <Modified>2015-11-22T17:08:05.940</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\FilerwPage.xbf">
       <PackagePath>FilerwPage.xbf</PackagePath>
       <Modified>2015-11-21T00:52:09.458</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\Debug\MyoGaming\GamePage.xbf">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\GamePage.xbf">
       <PackagePath>GamePage.xbf</PackagePath>
-      <Modified>2015-11-22T00:43:27.598</Modified>
+      <Modified>2015-11-22T15:37:24.878</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\Debug\MyoGaming\GuidePage.xbf">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\GuidePage.xbf">
       <PackagePath>GuidePage.xbf</PackagePath>
-      <Modified>2015-11-21T20:55:41.887</Modified>
+      <Modified>2015-11-22T17:08:05.940</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\Debug\MyoGaming\MainPage.xbf">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
       <Modified>2015-11-21T23:43:44.300</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\Debug\MyoGaming\RecordPage.xbf">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\NavigatorPage.xbf">
+      <PackagePath>NavigatorPage.xbf</PackagePath>
+      <Modified>2015-11-22T17:08:05.940</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\NewgamePage.xbf">
+      <PackagePath>NewgamePage.xbf</PackagePath>
+      <Modified>2015-11-22T17:08:05.940</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\RecordPage.xbf">
       <PackagePath>RecordPage.xbf</PackagePath>
-      <Modified>2015-11-21T23:43:44.300</Modified>
+      <Modified>2015-11-22T17:08:05.940</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\Debug\MyoGaming\WelcomePage.xbf">
-      <PackagePath>WelcomePage.xbf</PackagePath>
-      <Modified>2015-11-21T20:21:35.265</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Visual Studio Workspace\Projects\MyoGaming\Debug\MyoGaming\resources.pri">
+    <AppxPackagedFile Include="F:\Visual Studio Workspace\Github repository\MyoGaming\MyoGaming_Win8.1\Debug\MyoGaming\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-11-21T21:15:45.462</Modified>
+      <Modified>2015-11-22T15:16:49.669</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -6,12 +6,11 @@
 #include "pch.h"
 #include "MainPage.xaml.h"
 #include "timer_var.h"
-#include "GamePage.xaml.h"
 #include "gamepage_var.h"
-#include "FilerwPage.xaml.h"
+#include "NavigatorPage.xaml.h"
 #include <iostream>
 #include <fstream>
-#include "score.h"
+#include "recorder_var.h"
 
 using namespace MyoGaming;
 
@@ -31,6 +30,8 @@ using namespace Windows::UI::Xaml::Navigation;
 MainPage::MainPage()
 {
 	InitializeComponent();
+	fileManager->CreateFile(fileName);
+	
 }
 void MainPage::WelcomeAnimation()
 {
@@ -64,5 +65,5 @@ void MyoGaming::MainPage::lnk_start_Click(Platform::Object^ sender, Windows::UI:
 {
 
 	timer_var_clear();
-	this->Frame->Navigate(Windows::UI::Xaml::Interop::TypeName(GamePage::typeid));
+	this->Frame->Navigate(Windows::UI::Xaml::Interop::TypeName(NavigatorPage::typeid));
 }

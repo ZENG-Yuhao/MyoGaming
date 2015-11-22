@@ -5,6 +5,7 @@
 
 #include "pch.h"
 #include "GuidePage.xaml.h"
+#include "NavigatorPage.xaml.h"
 
 using namespace MyoGaming;
 
@@ -24,4 +25,10 @@ using namespace Windows::UI::Xaml::Navigation;
 GuidePage::GuidePage()
 {
 	InitializeComponent();
+}
+
+
+void MyoGaming::GuidePage::btn_back_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	this->Frame->Navigate(Windows::UI::Xaml::Interop::TypeName(NavigatorPage::typeid));
 }

@@ -8,6 +8,8 @@
 #include "gamepage_var.h"
 #include "RecordPage.xaml.h"
 #include "timer_var.h"
+#include "MainPage.xaml.h"
+#include "recorder_var.h"
 
 using namespace MyoGaming;
 
@@ -27,12 +29,12 @@ using namespace Windows::UI::Xaml::Navigation;
 GamePage::GamePage()
 {
 	InitializeComponent();
-	GameMode = CLASSIC;
-	GameDifficulty = NORMAL;
 	initPaths(GameDifficulty);
+	UI_Update();
+	fileManager->CreateFile(fileName);
 }
 
-
+//when user has a reation, this method will be called;
 void MyoGaming::GamePage::submit(int value)
 {
 	if (locked || !started) return;
@@ -44,24 +46,24 @@ void MyoGaming::GamePage::submit(int value)
 		score++;
 		nb_right++;
 		path = "ms-appx:Assets/right.png";
-		if (GameMode = CLASSIC)
-		{
-			
-		}
 	}
 	else
 	{
 		nb_wrong++;
 		path = "ms-appx:Assets/wrong.png";
-		if (GameMode = CLASSIC)
+		if (GameMode == CLASSIC)
 		{
 			life--;
 			if (life <= 0) GameEnd();
 		}
 	}
 
+	if (GameMode == CLASSIC)
+	{
+		timerCounter = 0;
+	}
 
-	UI_Update();
+
 	code_direction = rand() % 4 + 1; //generate next direction  range: 1 to 4
 	int sign = rand() % 2; //random sign :  0 - negative , 1 - positive
 	if (sign == 0)
@@ -75,18 +77,31 @@ void MyoGaming::GamePage::submit(int value)
 	img_display->Source = BitmapImage;
 	EnterStoryboard->Begin();
 	locked = true;
+	UI_Update();
 }
 
 void MyoGaming::GamePage::UI_Update()
 {
+	btn_start->Content = "START";
 	txt_score->Text = "Score: " + score;
 	txt_rw->Text = "R/W: " + nb_right + "/" + nb_wrong;
-	txt_life->Text = "Life : " + life;
+	double Ttext;
+	if (GameMode == CLASSIC)
+	{
+		txt_life->Text = "Life : " + life;
+		Ttext = (boundsClassic - timerCounter) / 10;
+	}else if (GameMode == TIME_LIMITED)
+		Ttext = (boundsTimeLimited - timerCounter) / 10;
+	//txt_timer->Text = " " + Ttext + "." + (timerCounter % 10);
+	txt_timer->Text = "" + Ttext + "s";
+
 }
 
 void MyoGaming::GamePage::PointerIsBack()
 {
+	if (!started) return;
 	Sleep(300);
+	//initTimer();
 	locked = false;
 	//we make the absolute value of those red/blue arrows whose correct geste towards the same direction be the same, but with the oppsite sign.
 	String^ path;
@@ -130,7 +145,7 @@ void MyoGaming::GamePage::PointerIsBack()
 	BitmapImage = ref new Windows::UI::Xaml::Media::Imaging::BitmapImage(uri);
 	img_display->Source = BitmapImage;
 
-	
+
 }
 
 void MyoGaming::GamePage::GameStart()
@@ -138,57 +153,74 @@ void MyoGaming::GamePage::GameStart()
 	gamepage_var_clear();
 	UI_Update();
 	started = true;
-	initTimer();
 }
 
 void MyoGaming::GamePage::initTimer()
 {
+
 	timer = ref new Windows::UI::Xaml::DispatcherTimer();
-	switch (GameMode)
-	{
-	case CLASSIC:
-		ts.Duration = 30000000;	 //3 sec
-		timer->Interval = ts;
-		registrationtoken = timer->Tick += ref new EventHandler<Object^>(this, &GamePage::OnTick);
-		break;
-	case TIME_LIMITED:
-		ts.Duration = 600000000;	 //60 sec
-		timer->Interval = ts;
-		registrationtoken = timer->Tick += ref new EventHandler<Object^>(this, &GamePage::OnTick);
-		break;
-	default:
-		break;
-	}
+	timerCounter = 0;
+	//1 -> 0.0000001s
+	ts.Duration = 1000000;	 //0.1 sec
+	timer->Interval = ts;
 	timer->Start();
+	registrationtoken = timer->Tick += ref new EventHandler<Object^>(this, &GamePage::OnTick);
+}
+
+void MyoGaming::GamePage::deleteTimer()
+{
+
 }
 
 void MyoGaming::GamePage::OnTick(Object^ sender, Object^ e)
 {
-	timer->Stop();
-	timer->Tick -= registrationtoken;
+	timerCounter++;
+
 	switch (GameMode)
 	{
 	case CLASSIC:
-		locked = true;
-		life--;
-		UI_Update();
-		if (life <= 0) GameEnd();
-		initTimer();
+		if (timerCounter >= boundsClassic)
+		{
+			timerCounter = 0;
+			timer->Tick -= registrationtoken;
+			timer->Stop();
+			delete(timer);
+			locked = true;
+			life--;
+			UI_Update();
+			if (life <= 0)
+			{
+				GameEnd();
+			}
+			else
+				initTimer();
+		}
 		break;
 	case TIME_LIMITED:
-
-		GameEnd();
+		if (timerCounter >= boundsTimeLimited)
+		{
+			timerCounter = 0;
+			timerCounter = 0;
+			timer->Tick -= registrationtoken;
+			timer->Stop();
+			delete(timer);
+			GameEnd();
+		}
 		break;
 	default:
 		break;
 	}
+	UI_Update();
 }
 
 void MyoGaming::GamePage::GameEnd()
 {
 
 	started = false;
-	btn_start->Content = "Again.";
+	Uri = ref new Windows::Foundation::Uri("ms-appx:Assets/gameover-w.jpg");
+	BitmapImage = ref new Windows::UI::Xaml::Media::Imaging::BitmapImage(Uri);
+	img_display->Source = BitmapImage;
+	fileManager->WriteToFile(txt_score->Text + "      " + txt_rw->Text + ";");
 }
 
 void MyoGaming::GamePage::ctr_up_PointerEntered(Platform::Object^ sender, Windows::UI::Xaml::Input::PointerRoutedEventArgs^ e)
@@ -224,12 +256,17 @@ void MyoGaming::GamePage::pnl_display_PointerEntered(Platform::Object^ sender, W
 
 void MyoGaming::GamePage::btn_exit_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-	this->Frame->Navigate(Windows::UI::Xaml::Interop::TypeName(RecordPage::typeid));
+	timer_var_clear();
+	gamepage_var_clear();
+	this->Frame->Navigate(Windows::UI::Xaml::Interop::TypeName(MainPage::typeid));
 }
 
 
 
 void MyoGaming::GamePage::btn_start_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
+	Sleep(2000);
 	GameStart();
+	initTimer();
+	btn_start->IsEnabled = false;
 }

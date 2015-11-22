@@ -8,11 +8,11 @@ Windows::Foundation::EventRegistrationToken registrationtoken;
 
 void timer_var_clear()
 {
-	timerCounter = 0;
 	if (timer != nullptr)
 	{
-		timer->Stop();
+		timerCounter = 0;
 		timer->Tick -= registrationtoken;
+		timer->Stop();
 		delete(timer);
 	}
 }

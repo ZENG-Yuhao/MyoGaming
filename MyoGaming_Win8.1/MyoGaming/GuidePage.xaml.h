@@ -17,5 +17,7 @@ namespace MyoGaming
 	{
 	public:
 		GuidePage();
+	private:
+		void btn_back_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 	};
 }

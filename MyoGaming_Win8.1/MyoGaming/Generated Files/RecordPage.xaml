@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="black">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
 
         <Grid.RowDefinitions>
@@ -18,11 +18,11 @@
                    FontFamily="Arial" FontSize="50"
                    TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
-        <TextBlock Margin="250,0,250,50" Grid.Row="1" FontFamily="Arial" FontSize="30" 
-           TextAlignment="Left"         
-           Text="ENZO ENZO ENZO &#x0a;ENZO ENZO &#x0a;ENZO ENZO ENZO ENZO ENZO ENZO "/>
-        <Button x:ConnectionId='1' x:Name="btn_test" Content="TEST"
-                FontSize="30"                        />
+        <TextBlock x:Name="txt_content" Margin="250,0,250,95" Grid.Row="1" FontFamily="Arial" FontSize="30" 
+           TextAlignment="Left"      
+           Text=""/>
+        <Button x:ConnectionId='1' x:Name="btn_test" Content="Refresh"
+                FontSize="30"                        Margin="621,549,0,7" Grid.Row="1" />
     </Grid>
 </Page>
 

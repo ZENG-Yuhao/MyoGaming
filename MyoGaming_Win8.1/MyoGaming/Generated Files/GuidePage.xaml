@@ -7,8 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="Black">
-        
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" >
+            <TextBlock Text="#color blue# = Direction being pointed out." FontSize="20" Foreground="Black" HorizontalAlignment="Center"/>
+            <TextBlock Text="#color red# = Oppisite direction of the direction being pointed out." FontSize="20" Foreground="Black" HorizontalAlignment="Center"/>
+            <HyperlinkButton x:ConnectionId='1' x:Name="btn_back" Content="Back" HorizontalAlignment="Center" FontSize="30"                        />
+        </StackPanel>
+        <StackPanel Grid.Row="0">
+            <Image Source="Assets/guide.png" Stretch="UniformToFill" HorizontalAlignment="Center"/>
+        </StackPanel>
     </Grid>
 </Page>
 

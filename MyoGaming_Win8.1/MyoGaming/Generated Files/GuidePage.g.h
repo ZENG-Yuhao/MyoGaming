@@ -8,6 +8,15 @@
 //     the code is regenerated.
 //------------------------------------------------------------------------------
 
+namespace Windows {
+    namespace UI {
+        namespace Xaml {
+            namespace Controls {
+                ref class HyperlinkButton;
+            }
+        }
+    }
+}
 
 namespace MyoGaming
 {
@@ -21,6 +30,7 @@ namespace MyoGaming
     private:
         bool _contentLoaded;
     
+        private: ::Windows::UI::Xaml::Controls::HyperlinkButton^ btn_back;
     };
 }
 
